@@ -1,0 +1,86 @@
+/* Resetando alguns estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Container centralizado */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos do Header */
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#navbar {
+  justify-content: space-between;
+  display: flex;
+}
+
+.header h1 {
+  margin-bottom: 5px;
+}
+
+.header nav ul {
+  list-style-type: none;
+}
+
+.header nav ul li {
+  display: inline;
+  margin: 15px;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Estilos do Banner */
+.banner {
+  background-color: #ecf0ed;
+  color: #007bff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.banner h2 {
+  font-size: 2.5rem;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Estilos das seções */
+section {
+  padding: 50px 0;
+}
+
+.sobre {
+  background-color: #f8f9fa;
+}
+
+.contato {
+  background-color: #e9ecef;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
