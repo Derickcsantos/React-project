@@ -14,6 +14,34 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 50px;
+}
+
+.contatoContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerSobre{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.conteudoSobre{
+  width: 50%;
+}
+
+.conteudoSobre p{
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.imgSobre{
+  height: 250px;
+  width: 280px;
 }
 
 /* Estilos do Header */
@@ -22,6 +50,11 @@ body {
   color: white;
   padding: 20px 0;
   text-align: center;
+}
+
+.head{
+  padding: 10px;
+  align-items: center;
 }
 
 #navbar {
@@ -83,4 +116,40 @@ footer {
   color: white;
   padding: 20px 0;
   text-align: center;
+}
+
+form{
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+input,
+textarea{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+
+input{
+  width: 400px;
+}
+
+textarea{
+  height: 200px;
+  width: 400px;
+}
+
+.enviarFormulario{
+  border: #ccc;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.enviarFormulario:hover{
+  scale: 1.1;
 }

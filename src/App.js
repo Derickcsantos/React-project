@@ -1,39 +1,15 @@
 import React, { useState } from 'react';
 import './App.css';
+import Form from './components/Form';
 
-function Form() {
-  const [isSent, setIsSent] = useState(false);
-  const [message, setMessage] = useState('Hi!');
 
-  if (isSent) {
-    return <h1>Your message is on its way!</h1>;
-  }
-
-  return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        setIsSent(true);
-        // Removido a chamada para `sendMessage`
-        console.log(message); // Apenas para fins de teste, mostramos a mensagem no console
-      }}
-    >
-      <textarea
-        placeholder="Message"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-      />
-      <button type="submit">Send</button>
-    </form>
-  );
-}
-
-function App() {
+function App ()
+{
   return (
     <div className="App">
-      {/* Header */}
+      {/* Header */ }
       <header className="header">
-        <div className="container" id="navbar">
+        <div className="head" id="navbar">
           <h1>React</h1>
           <nav>
             <ul>
@@ -45,33 +21,41 @@ function App() {
         </div>
       </header>
 
-      {/* Banner */}
+      {/* Banner */ }
       <section id="home" className="banner">
         <div className="container">
           <h2>Projeto utilizando React</h2>
         </div>
       </section>
 
-      {/* Seção Sobre */}
+      {/* Seção Sobre */ }
       <section id="sobre" className="sobre">
-        <div className="container">
-          <h2>Sobre o Projeto</h2>
-          <p>Este projeto é uma página de exemplo para aprender React e suas funcionalidades!</p>
+        <div className="container containerSobre">
+          <div className='conteudoSobre'>
+            <h2>Sobre mim</h2>
+            <p>Sou estudante de Desenvolvimento de Sistemas com 19 anos, apaixonado por tecnologia e em busca da minha primeira oportunidade como Desenvolvedor Júnior.
+              Atualmente, estou me aprofundando em Javascript, Node.js e MySQL, com foco em me tornar um desenvolvedor full-stack.
+              Sou proativo, motivado e comprometido com meu desenvolvimento contínuo, buscando sempre aplicar as melhores práticas em tudo o que faço.</p>
+          </div>
+          <div >
+            <img className='imgSobre' src='../img/sobre.png'></img>
+          </div>
         </div>
+        
       </section>
 
-      {/* Seção de Contato */}
+      {/* Seção de Contato */ }
       <section id="contato" className="contato">
-        <div className="container">
+        <div className="container contatoContainer">
           <h2>Entre em Contato</h2>
-          <Form /> {/* Chama o componente Form para o envio de mensagens */}
+          <Form /> {/* Chama o componente Form para o envio de mensagens */ }
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Footer */ }
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2025 Minha Landing Page. Todos os direitos reservados.</p>
+          <p>&copy; 2025 React Landing Page</p>
         </div>
       </footer>
     </div>
