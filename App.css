@@ -1,0 +1,155 @@
+/* Resetando alguns estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Container centralizado */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.contatoContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerSobre{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.conteudoSobre{
+  width: 50%;
+}
+
+.conteudoSobre p{
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.imgSobre{
+  height: 250px;
+  width: 280px;
+}
+
+/* Estilos do Header */
+.header {
+  background-color: #476ce6bb;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.head{
+  padding: 10px;
+  align-items: center;
+}
+
+#navbar {
+  justify-content: space-between;
+  display: flex;
+}
+
+.header h1 {
+  margin-bottom: 5px;
+}
+
+.header nav ul {
+  list-style-type: none;
+}
+
+.header nav ul li {
+  display: inline;
+  margin: 15px;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Estilos do Banner */
+.banner {
+  background-color: #ecf0ed;
+  color: #8cbfe6;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.banner h2 {
+  font-size: 2.5rem;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Estilos das seções */
+section {
+  padding: 50px 0;
+}
+
+.sobre {
+  background-color: #f8f9fa;
+}
+
+.contato {
+  background-color: #e9ecef;
+}
+
+footer {
+  background-color: #476ce6bb;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+form{
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+input,
+textarea{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+
+input{
+  width: 400px;
+}
+
+textarea{
+  height: 200px;
+  width: 400px;
+}
+
+.enviarFormulario{
+  border: #ccc;
+  background-color: #476ce6bb;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.enviarFormulario:hover{
+  scale: 1.1;
+}
