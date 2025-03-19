@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 function Form ()
 {
   const [ isSent, setIsSent ] = useState( false );
-  const [ message, setMessage ] = useState( 'Escreva algo aqui' );
+  const [ message, setMessage ] = useState( '' );
 
   if ( isSent )
   {
@@ -25,7 +25,6 @@ function Form ()
       <textarea
         placeholder="Digite algo aqui"
         value={ message }
-        onChange={ ( e ) => setMessage( e.target.value ) }
       />
       <button className='enviarFormulario' type="submit">Enviar</button>
     </form>

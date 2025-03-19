@@ -1,22 +1,24 @@
 import React, { useState } from 'react';
 import './App.css';
 import Form from './components/Form';
+import { FiAlignJustify } from "react-icons/fi";
 
 
-function App ()
-{
+function App () {
+
   return (
     <div className="App">
       {/* Header */ }
       <header className="header">
         <div className="head" id="navbar">
           <h1>React</h1>
-          <nav>
-            <ul>
+          <nav className='nav'>
+            <ul className='navItens'>
               <li><a href="#home">Home</a></li>
               <li><a href="#sobre">Sobre</a></li>
               <li><a href="#contato">Contato</a></li>
             </ul>
+            <FiAlignJustify className="icon"  />
           </nav>
         </div>
       </header>
